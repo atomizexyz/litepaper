@@ -68,7 +68,6 @@ sequenceDiagram
 
 ## Tokenomics
 <svg  width="100%" viewBox="0 0 1823 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>stake</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Slide-16:9" transform="translate(-26.000000, -376.000000)">
             <g id="stake" transform="translate(26.000000, 376.000000)">
@@ -94,6 +93,7 @@ sequenceDiagram
 #### Get Equity Tokens
 
 FENIX uses the proof-of-burn function from XEN. To mint FENIX, burn XEN, the amount burned per address will determine the base FENIX supply which can be used for staking.
+
 $$
 base=\log_{1.5}\left(BurnedXEN\right)
 $$
@@ -101,19 +101,25 @@ $$
 #### Stake Start
 
 **Time Bonus:** The amplificatoin a base stake's bonus compounding at 20% APY. The duration of a stake term is uncapped but there are penalties for ending early and ending late.
+
 $$
 \tau=base* \left(\frac{days}{365 days}\right) * 20\%
 $$
+
 **Size Bonus:** The amplificatoin of a base stake's bonus using the natural log of the base rate. The size of a stake is uncapped but consolidating a stake yields more rewards.
+
 $$
 \sigma=ln(base)
 $$
+
 **Total Bonus:** The sum of the time and size bonus calculated upon starting a stake.
+
 $$
 \beta = \tau + \sigma
 $$
 
 **Total Stake:** The sum of the base FENIX plus the bonus FENIX
+
 $$
 stake = base + \beta
 $$
@@ -121,10 +127,13 @@ $$
 #### Stake End + Penalty
 
 **End Early:** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is compelted, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
+
 $$
 \epsilon=\left(base + bonus\right) * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
+
 **End Late** Ending a stake that is overdue results in panlties. The stake is penalized one percent of the total earnings every week until nothing is left.
+
 $$
 \lambda=\left(base + bonus\right) * \left(\dfrac{lateDays}{7 days * 100 weeks}\right)
 $$

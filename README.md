@@ -1,16 +1,9 @@
 <p align="center">
-<svg width="218" height="159" viewBox="0 0 218 159" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M179.08 40.101C128.558 4.51108 43.5196 0.501018 -1.52588e-05 0C4.00186 45.6146 27.5124 84.2119 40.018 97.746C53.0239 78.1967 76.8679 64.4955 88.5398 60.1513C78.0351 51.6298 74.5333 39.0982 74.5333 29.5744C101.045 47.6197 135.061 43.7822 158.571 56.1412C182.082 68.5001 185.083 95.7409 184.083 108.272C173.078 98.2472 151.493 98.3546 141.063 113.285C120.053 143.361 163.776 173.5 196.588 151.381C230.603 128.451 223.6 69.174 179.08 40.101Z" fill="url(#paint0_linear_9573_32799)"/>
-<defs>
-<linearGradient id="paint0_linear_9573_32799" x1="218.107" y1="0.18885" x2="9.16742" y2="139.798" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6781A"/>
-<stop offset="1" stop-color="#F9386D"/>
-</linearGradient>
-</defs>
-</svg>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./img/fenix-dark.svg">
+  <img alt="fenix" src="./img/fenix-light.svg">
+</picture>
 </p>
-
-# FENIX
 
 ## Vision
 

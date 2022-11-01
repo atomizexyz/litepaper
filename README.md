@@ -1,12 +1,22 @@
+<p align="center">
+<svg width="218" height="159" viewBox="0 0 218 159" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M179.08 40.101C128.558 4.51108 43.5196 0.501018 -1.52588e-05 0C4.00186 45.6146 27.5124 84.2119 40.018 97.746C53.0239 78.1967 76.8679 64.4955 88.5398 60.1513C78.0351 51.6298 74.5333 39.0982 74.5333 29.5744C101.045 47.6197 135.061 43.7822 158.571 56.1412C182.082 68.5001 185.083 95.7409 184.083 108.272C173.078 98.2472 151.493 98.3546 141.063 113.285C120.053 143.361 163.776 173.5 196.588 151.381C230.603 128.451 223.6 69.174 179.08 40.101Z" fill="url(#paint0_linear_9573_32799)"/>
+<defs>
+<linearGradient id="paint0_linear_9573_32799" x1="218.107" y1="0.18885" x2="9.16742" y2="139.798" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6781A"/>
+<stop offset="1" stop-color="#F9386D"/>
+</linearGradient>
+</defs>
+</svg>
+</p>
+
 # FENIX
 
 ## Vision
 
-FENIX is a crypto first prinicple [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crytpo stakers for delayed gratifiction.
+FENIX is a crypto first principle [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crypto stakers for delayed gratification.
 
-
-
-FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derrived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsided amount of the supply, it encoruages the entire community to cooproate and coordiate. The FENIX token is minted by burning XEN, the fasest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
+FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the supply, it encourages the entire community to cooperate and coordinate. The FENIX token is minted by burning XEN, the fastest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
 
 ## Principles
 
@@ -60,14 +70,15 @@ sequenceDiagram
     Started->>Deferred: Defer End - No Penalty
     Started->>Ended: End Late - Penalty
 
-	
+
     Deferred->>FENIX: Mint
     Ended->>FENIX: Mint
-    
 ```
 
 ## Tokenomics
-<svg  width="100%" viewBox="0 0 1823 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg width="100%" viewBox="0 0 1823 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>stake</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Slide-16:9" transform="translate(-26.000000, -376.000000)">
             <g id="stake" transform="translate(26.000000, 376.000000)">
@@ -100,13 +111,13 @@ $$
 
 #### Stake Start
 
-**Time Bonus:** The amplificatoin a base stake's bonus compounding at 20% APY. The duration of a stake term is uncapped but there are penalties for ending early and ending late.
+**Time Bonus:** The amplification a base stake's bonus compounding at 20% APY. The duration of a stake term is uncapped but there are penalties for ending early and ending late.
 
 $$
 \tau=base* \left(\frac{days}{365 days}\right) * 20\%
 $$
 
-**Size Bonus:** The amplificatoin of a base stake's bonus using the natural log of the base rate. The size of a stake is uncapped but consolidating a stake yields more rewards.
+**Size Bonus:** The amplification of a base stake's bonus using the natural log of the base rate. The size of a stake is uncapped but consolidating a stake yields more rewards.
 
 $$
 \sigma=ln(base)
@@ -126,13 +137,13 @@ $$
 
 #### Stake End + Penalty
 
-**End Early:** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is compelted, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
+**End Early:** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is completed, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
 
 $$
 \epsilon=\left(base + bonus\right) * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
 
-**End Late** Ending a stake that is overdue results in panlties. The stake is penalized one percent of the total earnings every week until nothing is left.
+**End Late** Ending a stake that is overdue results in penalties. The stake is penalized one percent of the total earnings every week until nothing is left.
 
 $$
 \lambda=\left(base + bonus\right) * \left(\dfrac{lateDays}{7 days * 100 weeks}\right)
@@ -153,24 +164,23 @@ $$
 
 **Terms**
 
-- _base_  — The base FENIX token used in a stake
-- _𝞃_  — (Tau/Time Bonus) The time bonus caluclating for a stake. This bonus rewards a staker the longer longer delay gratificaiton by issuing a bonus of `20%` APY every  year.
-- _𝛔_  — (Sigma/Size Bonus) The size bonus calculation for a stake. This bonus rewards a staker more tokens based on  the amount of tokens which are staked.
-- _β_  — (Beta/Total Bonus) The total bonus which is the sum of the time bonus and the size bonus.
-- _𝝲_  — (Gamma/Grace Period) The grace window for ending your stake calculated at 28 days (4 weeks). This window gives a staker time to end a stake without incurring any penalties.
-- _𝝴_ — (Epsilon, Early Penalty) The penality for prematurely ending a stake. The penality is costs the staker the square of a serverd term.
-- **_𝝺_**  — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose `1%` of total earnings every week over the course of 100 weeks. At the end of 100 weeks, the stake reward will be 0.
+- _base_ — The base FENIX token used in a stake
+- _𝞃_ — (Tau/Time Bonus) The time bonus calculating for a stake. This bonus rewards a staker the longer longer delay gratification by issuing a bonus of `20%` APY every year.
+- _𝛔_ — (Sigma/Size Bonus) The size bonus calculation for a stake. This bonus rewards a staker more tokens based on the amount of tokens which are staked.
+- _β_ — (Beta/Total Bonus) The total bonus which is the sum of the time bonus and the size bonus.
+- _𝝲_ — (Gamma/Grace Period) The grace window for ending your stake calculated at 28 days (4 weeks). This window gives a staker time to end a stake without incurring any penalties.
+- _𝝴_ — (Epsilon, Early Penalty) The penalty for prematurely ending a stake. The penalty is costs the staker the square of a served term.
+- **_𝝺_** — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose `1%` of total earnings every week over the course of 100 weeks. At the end of 100 weeks, the stake reward will be 0.
 
 **Functions**
 
 - `function burnXEN(uint256 xen)` — Burns XEN to convert into FENIX
 - `function startStake(address burnAddress, uint256 term` — Starts a Stake based on Burned XEN for a term duration expressed in days
 - `function startStake(uint256 FENIX, uint256 term)` — Starts a stake with FENIX for a term duration expressed in days
-- `function deferStake(uint256 stakeId)` — Indefinnitely defers the ending of a stake during the grace period
+- `function deferStake(uint256 stakeId)` — Indefinitely defers the ending of a stake during the grace period
 - `function endStake(uint256 stakeId)` — Ends a stake minting FENIX into the stakers wallet
 - `function calculateBase(uint256 xen)` — Calculates the base FENIX from XEN
 - `function calculateBonus(uint256 xen, uint256 term)` — Calculates the Bonus FENIX based on the term and the amount of FENIX
 - `function updateEquity(Stake memory stake)` — Updates the equity share rate based on the maximum return on investment any users has ever reached in the system.
 - `function calculateEarlyPenalty(Stake memory stake)` — Calculates the early end stake penalty from a stake
 - `function calculateLatePenalty(Stake memory stake)` — Calculates the late end stake penalty from a stake
-

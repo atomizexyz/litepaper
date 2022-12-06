@@ -5,11 +5,27 @@
 </picture>
 </p>
 
+<center>
+FENIX pays you to hold your own crypto
+</center>
+
+## Introduction
+
+Since the birth of Bitcion in 2009, counterparties have convinced investors to give them resource in exchange for the promise of secured funds and yield. Time and time again, we've seen these centralized counterparties fail. Failure modes include hacks, over leverage, insider trading, poor accounting, and opaque communication. Crypto provides a solution with transparent censorship resistant zero counterparty risk value system. FENIX leverages open source code on public blockchains to provide a [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crypto stakers for delayed gratification.
+
 ## Vision
 
-FENIX is a crypto first principle [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crypto stakers for delayed gratification.
-
 FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the supply, it encourages the entire community to cooperate and coordinate. The FENIX token is minted by burning XEN, the fastest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
+
+## XEN Upgrades
+
+**Equity**
+
+FENIX compresses the resource gap in the XEN minting process. We believe in an equitable start which means that people should all have the opportunity to start at a similar place regardless of resources. This however does not mean that everyone will end the same — Your end is based on your time bonus, size, self custody, sovereignty, and responsibly ending your stake.
+
+**Time In Market**
+
+FENIX expands XEN staking to indefinite time preference. We believe that value is built over long term time horizons. FENIX allows you to create daily or multi-generational stakes that can be passed to future generations.
 
 ## Principles
 
@@ -70,29 +86,15 @@ sequenceDiagram
 
 ## Tokenomics
 
-<svg width="100%" viewBox="0 0 1823 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>stake</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Slide-16:9" transform="translate(-26.000000, -376.000000)">
-            <g id="stake" transform="translate(26.000000, 376.000000)">
-                <g id="Process-Background" opacity="0.1">
-                    <rect id="Earn" fill="#98FF1E" x="0" y="0" width="1095" height="700"></rect>
-                    <rect id="Lose" fill="#FF1E30" x="1123" y="0" width="700" height="700"></rect>
-                    <rect id="Grace" fill="#1EE9FF" x="1095" y="0" width="28" height="700"></rect>
-                </g>
-                <g id="Process-Fill">
-                    <path d="M1095.00678,0 L1095.00678,700 L0,700 C421.940104,595.385417 705.550781,477.5 850.832031,346.34375 C996.113281,215.1875 1077.50487,99.7395833 1095.00678,0 Z" id="Earn" fill="#98FF1E"></path>
-                    <polygon id="Lose" fill="#FF1E30" points="1123 0 1823 700 1123 700"></polygon>
-                    <rect id="Grace" fill="#1EE9FF" x="1095" y="0" width="28" height="700"></rect>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./img/stake-dark.svg">
+  <img alt="fenix" src="./img/stake-light.svg">
+</picture>
+</p>
 
-- ![#98FF1E](https://via.placeholder.com/15/98FF1E/98FF1E.png) Stake & Early End Penalty Period
-- ![#1EE9FF](https://via.placeholder.com/15/1EE9FF/1EE9FF.png) End Stake & Grace Period
-- ![#FF1E30](https://via.placeholder.com/15/FF1E30/FF1E30.png) Late End Penalty Period
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period
+- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period
 
 #### Get Equity Tokens
 
@@ -164,16 +166,3 @@ $$
 - _𝝲_ — (Gamma/Grace Period) The grace window for ending your stake calculated at 28 days (4 weeks). This window gives a staker time to end a stake without incurring any penalties.
 - _𝝴_ — (Epsilon, Early Penalty) The penalty for prematurely ending a stake. The penalty is costs the staker the square of a served term.
 - **_𝝺_** — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose `1%` of total earnings every week over the course of 100 weeks. At the end of 100 weeks, the stake reward will be 0.
-
-**Functions**
-
-- `function burnXEN(uint256 xen)` — Burns XEN to convert into FENIX
-- `function startStake(address burnAddress, uint256 term` — Starts a Stake based on Burned XEN for a term duration expressed in days
-- `function startStake(uint256 FENIX, uint256 term)` — Starts a stake with FENIX for a term duration expressed in days
-- `function deferStake(uint256 stakeId)` — Indefinitely defers the ending of a stake during the grace period
-- `function endStake(uint256 stakeId)` — Ends a stake minting FENIX into the stakers wallet
-- `function calculateBase(uint256 xen)` — Calculates the base FENIX from XEN
-- `function calculateBonus(uint256 xen, uint256 term)` — Calculates the Bonus FENIX based on the term and the amount of FENIX
-- `function updateEquity(Stake memory stake)` — Updates the equity share rate based on the maximum return on investment any users has ever reached in the system.
-- `function calculateEarlyPenalty(Stake memory stake)` — Calculates the early end stake penalty from a stake
-- `function calculateLatePenalty(Stake memory stake)` — Calculates the late end stake penalty from a stake

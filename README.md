@@ -5,9 +5,9 @@
 </picture>
 </p>
 
-<center>
+<p align="center">
 FENIX pays you to hold your own crypto
-</center>
+</p>
 
 ## Introduction
 

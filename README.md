@@ -15,9 +15,9 @@ Since the birth of Bitcion in 2009, counterparties have convinced investors to g
 
 ## Vision
 
-FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the supply, it encourages the entire community to cooperate and coordinate. The FENIX token is minted by burning XEN, the fastest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
+FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the initial supply, it encourages the entire community to cooperate and coordinate. The FENIX token is minted by burning XEN, the fastest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
 
-## XEN Upgrades
+## Features
 
 **Equity**
 
@@ -25,7 +25,11 @@ FENIX compresses the resource gap in the XEN minting process. We believe in an e
 
 **Time In Market**
 
-FENIX expands XEN staking to indefinite time preference. We believe that value is built over long term time horizons. FENIX allows you to create daily or multi-generational stakes that can be passed to future generations.
+FENIX expands XEN staking to a multi-generational time preference. We believe that value is built over long term time horizons. FENIX allows you to create daily or multi-generational stakes that can be passed to future generations.
+
+**Penalty Redistribution**
+
+FENIX rewards participants that manage their future stakes. FENIX also penalizes participants that don't do what they say they are going to do. The penalties are redistributed equally to honest participants.
 
 ## Principles
 

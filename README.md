@@ -105,10 +105,12 @@ sequenceDiagram
 FENIX uses the proof-of-burn function from XEN. To mint FENIX, burn XEN, the amount burned per address will determine the base FENIX supply which can be used for staking.
 
 $$
-base=\log_{1.5}\left(BurnedXEN\right)
+base=\left(BurnedXEN\right)
 $$
 
 #### Stake Start
+
+The stake start uses Time and Size bonus functions to calculate your equity stake in the pool (shares).
 
 **Time Bonus:** The amplification a base stake's bonus compounding at 20% APY. The duration of a stake term is uncapped but there are penalties for ending early and ending late.
 
@@ -128,36 +130,33 @@ $$
 \beta = \tau + \sigma
 $$
 
-**Total Stake:** The sum of the base FENIX plus the bonus FENIX
+**Shares:** The sum of the base FENIX plus the bonus FENIX
 
 $$
-stake = base + \beta
+shares = base + \beta
 $$
 
-#### Stake End + Penalty
+#### Stake End
+
+Ending your stake exists along two continuous functions. One function increases the percent of your stake before your target date and the other decreased the percent of your stake after your target date.
+
+End a stake distributes the tokens into owner address address, while redistributing any penalties to the staking pool. This function can only be triggered by the owner of the wallet.
 
 **End Early:** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is completed, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
 
 $$
-\epsilon=\left(base + bonus\right) * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
+\epsilon=\left(shares\right) * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
 
-**End Late** Ending a stake that is overdue results in penalties. The stake is penalized one percent of the total earnings every week until nothing is left.
+**End Late:** Ending a stake that is overdue results in penalties. The stake is penalized for 180 days until nothing is left. The penalty function is graceful that does not redistribute over 50% of your stake until day 143.
 
 $$
-\lambda=\left(base + bonus\right) * \left(\dfrac{lateDays}{7 days * 100 weeks}\right)
+\lambda=\left(shares\right) * 1-\left(\dfrac{lateDays}{180 days}\right)^3
 $$
 
-#### Stake End + No Penalty
+#### Defer
 
-There are two ways to end a stake. Upon ending a stake, the FENIX will calculate the return generated from the stake and increase the shares proportionally. There is a four week grace period allowing the completion of a stake without any early or late end stake penalties.
-
-$$
-\gamma= 7 days * 4 weeks
-$$
-
-- **Defer** Acknowledge that the owner still has access but is not yet ready to receive tokens. This can be triggered by anyone.
-- **Now** Distributes the tokens into owner address address. This function can only be triggered by the owner of the wallet.
+Acknowledge that the owner still has access but is not yet ready to receive tokens. This can be triggered by only once the stake term is completed.
 
 ## Glossary
 
@@ -167,6 +166,5 @@ $$
 - _𝞃_ — (Tau/Time Bonus) The time bonus calculating for a stake. This bonus rewards a staker the longer longer delay gratification by issuing a bonus of `20%` APY every year.
 - _𝛔_ — (Sigma/Size Bonus) The size bonus calculation for a stake. This bonus rewards a staker more tokens based on the amount of tokens which are staked.
 - _β_ — (Beta/Total Bonus) The total bonus which is the sum of the time bonus and the size bonus.
-- _𝝲_ — (Gamma/Grace Period) The grace window for ending your stake calculated at 28 days (4 weeks). This window gives a staker time to end a stake without incurring any penalties.
 - _𝝴_ — (Epsilon, Early Penalty) The penalty for prematurely ending a stake. The penalty is costs the staker the square of a served term.
-- **_𝝺_** — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose `1%` of total earnings every week over the course of 100 weeks. At the end of 100 weeks, the stake reward will be 0.
+- **_𝝺_** — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose a percentage of total earnings over the course of 180 days. At the end of 180 day, the stake reward will be 0.

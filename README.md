@@ -11,7 +11,7 @@ FENIX pays you to hold your own crypto
 
 ## Introduction
 
-Since the birth of Bitcoin in 2009, counterparties have convinced investors to give them resource in exchange for the promise of secured funds and yield. Time and time again, we've seen these centralized counterparties fail. Failure modes include hacks, over leverage, insider trading, poor accounting, and opaque communication. Crypto allows for value custody with censorship resistance and without counterparty risk. FENIX leverages open source code on public blockchains to provide a [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crypto stakers for delayed gratification.
+Since the birth of Bitcoin in 2009, counterparties have convinced investors to give them resource in exchange for the promise of secured funds and yield. Time and time again, we've seen these centralized counterparties fail. Failure modes include hacks, over leverage, insider trading, poor accounting, and opaque communication. Crypto was invented to get rid of middle men and remove counterparty risk. The FENIX protocol uses open source code on public blockchains to provide a [hyperstructure](https://jacob.energy/hyperstructures.html) that rewards crypto stakers for delayed gratification.
 
 ## Vision
 
@@ -115,7 +115,7 @@ The stake start uses Time and Size bonus functions to calculate your equity stak
 **Time Bonus:** The amplification a base stake's bonus compounding at 20% APY. The duration of a stake term is uncapped but there are penalties for ending early and ending late.
 
 $$
-\tau=base* \left(\frac{days}{365 days}\right) * 20\%
+\tau=base* \left(1 + 0.2 \right)^\frac{days}{365 days}
 $$
 
 **Size Bonus:** The amplification of a base stake's bonus using the natural log of the base rate. The size of a stake is uncapped but consolidating a stake yields more rewards.
@@ -145,7 +145,7 @@ End a stake distributes the tokens into owner address address, while redistribut
 **End Early:** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is completed, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
 
 $$
-\epsilon=\left(shares\right) * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
+\epsilon=\left(shares\right) * \left(1\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
 
 **End Late:** Ending a stake that is overdue results in penalties. The stake is penalized for 180 days until nothing is left. The penalty function is graceful that does not redistribute over 50% of your stake until day 143.

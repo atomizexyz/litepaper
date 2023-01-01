@@ -15,21 +15,21 @@ Since the birth of Bitcoin in 2009, counterparties have convinced investors to g
 
 ## Vision
 
-FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the initial supply, it encourages the entire community to cooperate and coordinate. The FENIX token is minted by burning XEN, the fastest and most widely adopted token in crypto. XEN is a cross-chain protocol with a vision of onboarding as many users into crypto as possible.
+FENIX is designed to reward crypto community members who believe in cryptos first principles of self-custody, transparency, trust through consensus, and permissionless value exchange without counterparty risk. FENIX's value is derived from the skills of the community members who have the freedom to assemble and create value for FENIX. Since no one party will own an outsized amount of the initial supply, it encourages the entire community to cooperate and coordinate. FENIX is minted from the ashes of burnt XEN. XEN is the fastest growing cross-chain protocol with a vision of onboarding as many users into crypto as possible.
 
 ## Features
 
 **Equity**
 
-FENIX compresses the resource gap in the XEN minting process. We believe in an equitable start which means that people should all have the opportunity to start at a similar place regardless of resources. This however does not mean that everyone will end the same — Your end is based on your time bonus, size, self custody, sovereignty, and responsibly ending your stake.
+Having an equitable initial investment distribution is crucial for ensuring that all stakeholders have an equal opportunity to participate and benefit from a project or venture. When investments are distributed fairly, it can help to reduce conflicts and promote a sense of shared ownership and responsibility. This can foster a more collaborative and inclusive environment, which is essential for the success of any project. An equitable investment distribution can also help to promote trust and transparency, as all parties are treated fairly and with respect. Overall, an equitable initial investment distribution is an essential component of a well-functioning and sustainable project or venture.
 
 **Time In Market**
 
-FENIX expands XEN staking to a multi-generational time preference. We believe that value is built over long term time horizons. FENIX allows you to create daily or multi-generational stakes that can be passed to future generations.
+Having a long-term investment time horizon can be extremely beneficial for investors. This is because it allows for a more measured and disciplined approach to investing, as investors can focus on the long-term growth potential of their investments rather than being swayed by short-term market fluctuations. In addition, a long-term investment time horizon can help investors to weather economic downturns and market volatility, as they can hold onto their investments for a longer period of time until conditions improve. This can help to reduce the overall risk of investing and increase the likelihood of achieving long-term financial goals. Furthermore, a long-term investment time horizon can allow investors to take advantage of the power of compound growth, as their investments have more time to grow and accrue returns. Overall, having a long-term investment time horizon can be a key factor in building wealth and achieving financial success.
 
 **Penalty Redistribution**
 
-FENIX rewards participants that manage their future stakes. FENIX also penalizes participants that don't do what they say they are going to do. The penalties are redistributed equally to honest participants.
+A system that redistributes penalties from investors who fulfill their commitments to those who do not can be extremely valuable in promoting accountability and fairness in the investment process. Such a system can help to discourage investors from making commitments that they do not intend to fulfill, as they will be held financially responsible for their actions. This can help to build trust and confidence in the investment process, as investors know that they will be held accountable for their commitments. In addition, a system that redistributes penalties can help to level the playing field for all investors, as those who fulfill their commitments are not unfairly penalized while those who do not are not rewarded. Overall, a system that redistributes penalties can be a valuable tool in promoting integrity and fairness in the investment process.
 
 ## Principles
 

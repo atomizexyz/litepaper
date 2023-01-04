@@ -139,13 +139,13 @@ End a stake distributes the tokens into owner address address, while redistribut
 **End Early ($\epsilon$):** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is completed, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
 
 $$
-\epsilon=\left(shares\right) * \left(1\dfrac{blockTs - stakeTs}{term}\right)^2
+\epsilon=shares * \left(\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
 
 **End Late ($\lambda$):** Ending a stake that is overdue results in penalties. The stake is penalized for 180 days until nothing is left. The penalty function is graceful that does not redistribute over 50% of your stake until day 143.
 
 $$
-\lambda=\left(shares\right) * 1-\left(\dfrac{lateDays}{180 days}\right)^3
+\lambda=shares * \left(1-\left(\dfrac{lateDays}{180 days}\right)^3\right)
 $$
 
 #### Defer

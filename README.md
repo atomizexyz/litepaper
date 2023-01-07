@@ -100,7 +100,7 @@ $$
 burnRatio = 10,000 XEN : 1FENIX
 $$
 
-When any XEN user burns FENIX they will be rewarded in accordance with the `burnRatio`
+When any FENIX user burns XEN they will be rewarded in accordance with the `burnRatio`
 
 $$
 FENIX = \frac{XEN}{10,000}

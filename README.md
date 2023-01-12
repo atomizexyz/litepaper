@@ -114,7 +114,7 @@ FENIX has two bonuses, a First Mover **Launch Bonus** and an Early Adopter **Big
 FENIX launches at zero, then immediately injects a hyper inflationary supply immediately after launch. This supply is designed to reward FENIX first movers.
 
 $$
-launchBonus = \frac{XEN.totalSupply()}{10,000}
+launchBonus = \frac{XenTotalSupply}{10,000}
 $$
 
 **Early Adopter Big Bonus Day (Day 180)**
@@ -122,7 +122,7 @@ $$
 180 Days after the launch of FENIX, the contract will enable Big Bonus. This bonus supply is designed to reward the early adopters who chose to participate in the FENIX protocol.
 
 $$
-bigBonus = \frac{XEN.totalSupply()}{10,000}
+bigBonus = \frac{XenTotalSupply}{10,000}
 $$
 
 ### Staking

@@ -120,6 +120,8 @@ flowchart LR
 
 ### Staking
 
+#### Reward
+
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./img/stake-dark.svg">
@@ -127,8 +129,28 @@ flowchart LR
 </picture>
 </p>
 
-- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be 1 day to 20075 days (55 years). The stake break even follows a curve based on the length of your stake. Shorter stakes require completing a longer percent of time to break even.
-- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0 days and 180 days after your stake matures. Your late stakes break even if you end sooner than around 143 days from your stake maturity.
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be between 1 day and 20075 days (55 years).
+
+  > The closer you get to 100% of your stake completion, the more reward you receive.
+
+- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0% days and 100% after your stake matures. The end penalty period is between 0 days and 180 days.
+  > The closer to 0% late for ending your stake, the more reward you receive.
+
+#### Profit
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./img/profit-dark.svg">
+  <img alt="fenix" src="./img/profit-light.svg">
+</picture>
+</p>
+
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0 and 20075 days (55 years) of your stake term. The longer you stake, the larger your reward will be.
+
+  > Shorter stakes terms require completing a longer percent of time to break even.
+
+- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0 days and 180 days after your stake matures.
+  > Your end stake break even is 143 days (80%) after your stake is mature.
 
 #### Inflation Rate
 

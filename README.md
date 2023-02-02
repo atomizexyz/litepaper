@@ -167,7 +167,7 @@ The stake start uses Time and Size bonus functions to calculate your equity stak
 **Staking Time Bonus (_𝞃_):** The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 20075 days (55 years) but there are penalties for ending early and ending late.
 
 $$
-\tau=(\dfrac{fenix}{20075})^2
+\tau=(\dfrac{term}{20075})^2
 $$
 
 **Staking Size Bonus (_𝛔_):** The amplification of a base stake's bonus is based on how much you stake. The size of a stake is capped by your wallet supply. The larger your stake, the larger your bonus.
@@ -221,6 +221,8 @@ Acknowledge that the owner still has access but is not yet ready to receive toke
 - _𝝺_ — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose a percentage of total earnings over the course of 180 days. At the end of 180 day, the stake reward will be 0.
 
 ## Acknowledgements
+
+FENIX stands on the shoulders of giants taking inspiration from
 
 - [Bitcoin](https://github.com/bitcoin/bitcoin) (Jan 8, 2009) — Censorship resistant zero counter party risk value storage and transfer
 - [`0xd9D4...F5a6`](https://etherscan.io/token/0xd9D4A7CA154fe137c808F7EEDBe24b639B7AF5a6) [Cereneum](https://github.com/Cereneum/Cereneum) (Jun 6, 2019) — Time-based interest-bearing Cryptographic Certificate of Interest

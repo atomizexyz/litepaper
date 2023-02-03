@@ -120,8 +120,6 @@ flowchart LR
 
 ### Staking
 
-#### Reward
-
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./img/stake-dark.svg">
@@ -129,28 +127,8 @@ flowchart LR
 </picture>
 </p>
 
-- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be between 1 day and 20075 days (55 years).
-
-  > The closer you get to 100% of your stake completion, the more reward you receive.
-
-- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0% days and 100% after your stake matures. The end penalty period is between 0 days and 180 days.
-  > The closer to 0% late for ending your stake, the more reward you receive.
-
-#### Profit
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/profit-dark.svg">
-  <img alt="fenix" src="./img/profit-light.svg">
-</picture>
-</p>
-
-- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0 and 20075 days (55 years) of your stake term. The longer you stake, the larger your reward will be.
-
-  > Shorter stakes terms require completing a longer percent of time to break even.
-
-- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0 days and 180 days after your stake matures.
-  > Your end stake break even is 143 days (80%) after your stake is mature.
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be 1 day to 18250 days (50 years). Your stake will break even around 71% of your stake term completion.
+- ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0 days and 180 days after your stake matures. Your late stakes break even if you end sooner than around 143 days from your stake maturity.
 
 #### Inflation Rate
 
@@ -197,13 +175,13 @@ Ending a stake distributes the tokens into an owner's address, while redistribut
 **End Early (_𝝴_):** Ending a stake prematurely results in a penalty to the stake return. The longer the duration of a term is completed, the lower the penalty that is applied to that term. Lower penalties result in higher rewards.
 
 $$
-\epsilon=\dfrac{shares}{projectedBonus}
+\epsilon=\left(\dfrac{blockTs - stakeTs}{term}\right)^2
 $$
 
 **End Late (_𝝺_):** Ending a stake that is overdue results in penalties. The stake is penalized for 180 days until nothing is left. The penalty function is graceful and does not redistribute over 50% of your stake until day 143.
 
 $$
-\lambda=shares * \left(1-\left(\dfrac{lateDays}{180 days}\right)^3\right)
+\lambda=1 - \left(\dfrac{lateDays}{180 days}\right)^3
 $$
 
 #### Defer

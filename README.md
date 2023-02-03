@@ -173,7 +173,7 @@ $$
 **Staking Size Bonus (_𝛔_):** The amplification of a base stake's bonus is based on how much you stake. The size of a stake is capped by your wallet supply. The larger your stake, the larger your bonus.
 
 $$
-\sigma=-(\dfrac{1}{fenix}) + 1
+\sigma=1 -(\dfrac{1}{fenix})
 $$
 
 **Staking Total Bonus (_β_):** The sum of the time and size bonus calculated upon starting a stake. This total bonus generates a compound growth curve rewarding larger and longer stakes.

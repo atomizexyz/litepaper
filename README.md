@@ -145,7 +145,7 @@ The stake start uses Time and Size bonus functions to calculate your equity stak
 **Staking Time Bonus (_𝞃_):** The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 20075 days (55 years) but there are penalties for ending early and ending late.
 
 $$
-\tau=\sqrt\dfrac{term}{20075}
+\tau=\dfrac{term}{20075}
 $$
 
 **Staking Size Bonus (_𝛔_):** The amplification of a base stake's bonus is based on how much you stake. The size of a stake is capped by your wallet supply. The larger your stake, the larger your bonus.

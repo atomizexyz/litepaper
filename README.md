@@ -1,3 +1,12 @@
+<script>
+MathJax = {
+	tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']],
+	},
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./img/fenix-dark.svg">
@@ -66,25 +75,27 @@ A system that redistributes penalties from investors who do not fulfill their co
 </tr>
 </table>
 
+<div style="page-break-after: always;"></div>
+
 ## Process
 
 ```mermaid
 sequenceDiagram
-    participant XEN
-    participant FENIX
-    participant Started
-    participant Ended
-    participant Deferred
-    XEN->>FENIX: Burn XEN
-    FENIX->>Started: Start Stake
+  participant XEN
+  participant FENIX
+  participant Started
+  participant Ended
+  participant Deferred
+  XEN->>FENIX: Burn XEN
+  FENIX->>Started: Start Stake
 
-    Started->>Ended: End Early - Penalty
-    Started->>Ended: End - No Penalty
-    Started->>Deferred: Defer End - No Penalty
-    Started->>Ended: End Late - Penalty
+  Started->>Ended: End Early - Penalty
+  Started->>Ended: End - No Penalty
+  Started->>Deferred: Defer End - No Penalty
+  Started->>Ended: End Late - Penalty
 
-    Deferred->>FENIX: Mint
-    Ended->>FENIX: Mint
+  Deferred->>FENIX: Mint
+  Ended->>FENIX: Mint
 ```
 
 ## Tokenomics
@@ -117,6 +128,8 @@ flowchart LR
   ab-->f(Flush Reward Pool Into Stake Pool)
   f-->|13 week cooldown|ab
 ```
+
+<div style="page-break-after: always;"></div>
 
 ### Staking
 

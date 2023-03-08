@@ -1,12 +1,3 @@
-<script>
-MathJax = {
-	tex: {
-		inlineMath: [['$', '$'], ['\\(', '\\)']],
-	},
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./img/fenix-dark.svg">

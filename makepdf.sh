@@ -33,7 +33,10 @@ mmdc -i README.md -o pdf/litepaper.md
 version=`git describe --tags --abbrev=0`
 
 # Generate pdf from litepaper with version
-md-to-pdf pdf/litepaper.md fenix-litepaper-${version}.pdf
+pushd pdf
+cat litepaper.md | md-to-pdf > fenix-litepaper-${version}.pdf
+mv fenix-litepaper-${version}.pdf ../
+popd
 
 # cleanup pdf folder
 rm -rf pdf/

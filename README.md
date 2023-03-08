@@ -127,7 +127,7 @@ flowchart LR
 </picture>
 </p>
 
-- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be 1 day to 18250 days (50 years). Your stake will break even around 71% of your stake term completion.
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This time is between 0% and 100% of your stake term. The stake term can be 1 day to 7665 days (21 years). Your stake will break even around 71% of your stake term completion.
 - ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This time frame is between 0 days and 180 days after your stake matures. Your late stakes break even if you end sooner than around 143 days from your stake maturity.
 
 #### Inflation Rate
@@ -142,22 +142,22 @@ $$
 
 The stake start uses Time and Size bonus functions to calculate your equity stake in the pool (shares).
 
-**Staking Time Bonus (_𝞃_):** The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 20075 days (55 years) but there are penalties for ending early and ending late.
+**Staking Time Bonus (_𝞃_):** The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 7665 days (21 years) but there are penalties for ending early and ending late.
 
 $$
-\tau=\dfrac{term}{20075}
+\tau=1 + (\dfrac{term}{7665})
 $$
 
 **Staking Size Bonus (_𝛔_):** The amplification of a base stake's bonus is based on how much you stake. The size of a stake is capped by your wallet supply. The larger your stake, the larger your bonus.
 
 $$
-\sigma=1 -(\dfrac{1}{fenix})
+\sigma=1 - (\dfrac{1}{fenix})
 $$
 
 **Staking Total Bonus (_β_):** The sum of the time and size bonus calculated upon starting a stake. This total bonus generates a compound growth curve rewarding larger and longer stakes.
 
 $$
-\beta = fenix * e^{(\tau * 0.1 + \sigma * 0.9)}
+\beta = \sigma * e^{(\tau)}
 $$
 
 **Shares:** Your shares are your total bonus divided by your shareRate. The shares represent your equity in the staking pool.

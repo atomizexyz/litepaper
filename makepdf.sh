@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Multiline text header
+read -r -d '' LATEX_HEADER << EOM
+<script>
+MathJax = {
+	tex: {
+		inlineMath: [['$', '$'], ['\\(', '\\)']],
+	},
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+EOM
+
 # Create pdf folder if it doesn't exist
 if [ ! -d "pdf" ]; then
   mkdir pdf
@@ -34,8 +46,10 @@ version=`git describe --tags --abbrev=0`
 
 # Generate pdf from litepaper with version
 pushd pdf
-cat litepaper.md | md-to-pdf > fenix-litepaper-${version}.pdf
-mv fenix-litepaper-${version}.pdf ../
+  # Add LATEX_HEADER to litepaper.md
+  echo $LATEX_HEADER | cat - litepaper.md > temp && mv temp litepaper.md
+  cat litepaper.md | md-to-pdf > fenix-litepaper-${version}.pdf
+  mv fenix-litepaper-${version}.pdf ../
 popd
 
 # cleanup pdf folder

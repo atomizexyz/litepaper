@@ -267,7 +267,9 @@ $$
 ## Acknowledgements
 
 - **Bitcoin (Jan 8, 2009)** — Censorship resistant zero counter party risk value storage and transfer
-  - Links: [Source Code](https://github.com/bitcoin/bitcoin) • [Website](ttps://bitcoin.org)
+
+  - Links: [Source Code](https://github.com/bitcoin/bitcoin) • [Website](https://bitcoin.org)
+
 - **Uniswap V1 (Nov 2, 2018)** — Equity based liquidity pool
 
   - Links: [Source Code](https://github.com/Uniswap/v1-contracts) • [Website](https://uniswap.org) • [Contract](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984)

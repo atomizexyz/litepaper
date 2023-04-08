@@ -4,10 +4,17 @@
   <img alt="fenix" src="./img/fenix-light.svg">
 </picture>
 </p>
+<h4 align="center">
+Empower your crypto, earn while you hold!
+</h4>
 
 <p align="center">
-Empower your crypto, earn while you hold!
+Joe Blau • Engineering • <a href = "mailto:joe@atomize.xyz">joe@atomize.xyz</a>
+</br>
+Johad Ellis • Product • <a href = "mailto:johad@atomize.xyz">johad@atomize.xyz</a> 
 </p>
+
+<div style="page-break-after: always;"></div>
 
 ## Introduction
 
@@ -66,8 +73,6 @@ A system that redistributes penalties from investors who do not fulfill their co
 </tr>
 </table>
 
-<div style="page-break-after: always;"></div>
-
 ## Process
 
 ```mermaid
@@ -88,6 +93,8 @@ sequenceDiagram
   Deferred->>FENIX: Mint
   Ended->>FENIX: Mint
 ```
+
+<div style="page-break-after: always;"></div>
 
 ## Tokenomics
 
@@ -140,26 +147,26 @@ FENIX manages inflation through an equity pool, allowing inflation to be added a
 
 ```mermaid
 pie showData
-    "fenexian-one.eth" : 100
-    "fenexian-two.eth" : 100
-    "fenexian-ten.eth" : 100
+    "fenexian1.eth" : 100
+    "fenexian2.eth" : 100
+    "fenexian3.eth" : 100
 ```
 
-2. 300 FENIX in new inflation is added to the Equity Pool (This could be from new stakers or Adoption Reward). The new Equity Pool total is 600 FENIX.
+2. 300 FENIX in new inflation is added to the Equity Pool which could be from new stakers or Adoption Reward. The new Equity Pool total is 600 FENIX.
 
 ```mermaid
 pie showData
-    "fenexian-one.eth" : 200
-    "fenexian-two.eth" : 200
-    "fenexian-ten.eth" : 200
+    "fenexian1.eth" : 200
+    "fenexian2.eth" : 200
+    "fenexian3.eth" : 200
 ```
 
-3. `fenexian-ten.eth` ends their Stake, which removes their supply from the Equity Pool. `fenexian-ten.eth` mints 200 FENIX. The new Equity Pool total is 400 FENIX.
+3. `fenexian3.eth` ends their Stake, which removes their supply from the Equity Pool. `fenexian3.eth` mints 200 FENIX. The new Equity Pool total is 400 FENIX.
 
 ```mermaid
 pie showData
-    "fenexian-one.eth" : 200
-    "fenexian-two.eth" : 200
+    "fenexian1.eth" : 200
+    "fenexian2.eth" : 200
 ```
 
 ### Staking
@@ -256,13 +263,13 @@ $$
 
 **Terms**
 
-- **Equity Pool** — This is the pool that holds the future supply of FENIX to be paid to stakers.
-- **Reward Pool** — This is the pool that holds the copy of all minted FENIX. This pool can be flushed to the Equity Pool every 13 weeks.
 - **_𝞃_** — (Tau/Time Bonus) The time bonus calculation for a stake. This bonus rewards a staker for longer delayed gratification.
 - **_𝛔_** — (Sigma/Size Bonus) The size bonus calculation for a stake. This bonus rewards a staker with more tokens based on the number of tokens staked.
 - **_β_** — (Beta/Total Bonus) The total bonus, which is the sum of the time bonus and the size bonus.
 - **_𝝴_** — (Epsilon/Early Penalty) The penalty for prematurely ending a stake. The penalty costs the staker the square of the served term.
 - **_𝝺_** — (Lamda/Late Penalty) The penalty window for ending a stake. A staker will lose a percentage of total earnings over the course of 180 days. At the end of 180 days, the stake reward will be 0.
+
+<div style="page-break-after: always;"></div>
 
 ## Acknowledgements
 

@@ -48,7 +48,7 @@ version=`git describe --tags --abbrev=0`
 pushd pdf
   # Add LATEX_HEADER to litepaper.md
   echo $LATEX_HEADER | cat - litepaper.md > temp && mv temp litepaper.md
-  cat litepaper.md | md-to-pdf > fenix-litepaper-${version}.pdf
+  cat litepaper.md | md-to-pdf --config-file ../config.js > fenix-litepaper-${version}.pdf
   mv fenix-litepaper-${version}.pdf ../
 popd
 

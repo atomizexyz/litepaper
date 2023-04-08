@@ -266,20 +266,34 @@ $$
 
 ## Acknowledgements
 
-FENIX stands on the shoulders of giants. The contract uses concepts from
+- **Bitcoin (Jan 8, 2009)** — Censorship resistant zero counter party risk value storage and transfer
+  _Links:_ [Source Code](https://github.com/bitcoin/bitcoin) • [Website](ttps://bitcoin.org)
+- **Uniswap V1 (Nov 2, 2018)** — Equity based liquidity pool
+  _Links:_ [Source Code](https://github.com/Uniswap/v1-contracts) • [Website](https://uniswap.org) • [Contract](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984)
+  _Influential Concepts:_
 
-- [Bitcoin](https://github.com/bitcoin/bitcoin) (Jan 8, 2009) https://bitcoin.org — Censorship resistant zero counter party risk value storage and transfer
-- [`0x1f98...f984`](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984) [Uniswap V1](https://github.com/Uniswap/v1-contracts) (Nov 2, 2018) https://uniswap.org — Equity based liquidity pool
-  - **Liquidity Pools** - [Equity Pool](#equity-pool)
-- [`0xd9D4...F5a6`](https://etherscan.io/token/0xd9D4A7CA154fe137c808F7EEDBe24b639B7AF5a6) [Cereneum](https://github.com/Cereneum/Cereneum) (Jun 6, 2019) [https://cereneum.com](https://web.archive.org/web/20190622004643/https://www.cereneum.com/) — Time-based interest-bearing Cryptographic Certificate of Interest
-  - **Staking Longer Pays More** - [Time Bonus](#size-bonus-𝛔)
-  - **EndStakeForAFriend** - [Defer](#stake-defer)
-  - **Robin Hood Bonus** - [Adoption Reward](#adoption-reward-pool)
-  - **Early Unstake Penalty** - [End Early](#end-early-𝝴)
-  - **Late Unstake Penalty** - [End Late](#end-late-𝝺)
-- [`0x2b59...eb39`](https://etherscan.io/token/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39) [HEX](https://github.com/BitcoinHEX/contract) (Dec 2, 2019) https://hex.com — Share rate ratcheting increasing the cost basis for later stakers
-  - **Bigger Pays Better** - [Size Bonus](#size-bonus-𝛔)
-  - **T-Shares** - [Shares](#shares)
-- [`0x0645...6Fb8`](https://etherscan.io/token/0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8) [XEN Crypto](https://github.com/FairCrypto/XEN-crypto) (Oct 8, 2022) https://faircrypto.org — Cross-chain protocol launch
-  - **First Principles** - [First Principles](#fenix-principles)
-  - **Proof of Burn** - [Burn](#shares)
+  - Liquidity Pools - [Equity Pool](#equity-pool)
+
+- **Cereneum (Jun 6, 2019)** — Time-based interest-bearing Cryptographic Certificate of Interest
+  _Links:_ [Source Code](https://github.com/Cereneum/Cereneum) • [Website](https://web.archive.org/web/20190622004643/https://www.cereneum.com/) • [Contract](https://etherscan.io/token/0xd9D4A7CA154fe137c808F7EEDBe24b639B7AF5a6)
+  _Influential Concepts:_
+
+  - Staking Longer Pays More - [Time Bonus](#size-bonus-𝛔)
+  - EndStakeForAFriend - [Defer](#stake-defer)
+  - Robin Hood Bonus - [Adoption Reward](#adoption-reward-pool)
+  - Early Unstake Penalty - [End Early](#end-early-𝝴)
+  - Late Unstake Penalty - [End Late](#end-late-𝝺)
+
+- **HEX (Dec 2, 2019)** — Share rate ratcheting increasing the cost basis for later stakers
+  _Links:_ [Source Code](https://github.com/BitcoinHEX/contract) • [Website](https://hex.com) • [Contract](https://etherscan.io/token/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39)
+  _Influential Concepts:_
+
+  - Bigger Pays Better - [Size Bonus](#size-bonus-𝛔)
+  - T-Shares - [Shares](#shares)
+
+- **XEN Crypto (Oct 8, 2022)** — Cross-chain protocol launch
+  _Links:_ [Source Code](https://github.com/FairCrypto/XEN-crypto) • [Website](https://faircrypto.org) • [Contract](https://etherscan.io/token/0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8)
+  _Influential Concepts:_
+
+  - First Principles - [First Principles](#fenix-principles)
+  - Proof of Burn - [Burn](#shares)

@@ -178,7 +178,7 @@ pie showData
 </picture>
 </p>
 
-- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This period ranges from 0% to 100% of your stake term. The stake term can last anywhere from 1 day to 7,665 days (21 years). Your stake will typically break even when approximately 71% of your stake term is completed.
+- ![#F6B81A](https://via.placeholder.com/15/F6B81A/F6B81A.png) Stake & Early End Penalty Period - This period ranges from 0% to 100% of your stake term. The stake term can last anywhere from 1 day to 7,777 days (21 years). Your stake will typically break even when approximately 71% of your stake term is completed.
 - ![#F9386D](https://via.placeholder.com/15/F9386D/F9386D.png) Late End Penalty Period - This timeframe spans from 0 days to 180 days after your stake matures. Your late stakes will break even if you end them sooner than approximately 143 days from your stake's maturity date.
 
 #### Inflation
@@ -209,10 +209,10 @@ The stake start utilizes Time and Size bonus functions to calculate your equity 
 
 ##### Time Bonus (_𝞃_):
 
-The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 7,665 days (21 years), but there are penalties for ending early and ending late.
+The amplification of your bonus grows exponentially with your stake duration. The duration of a stake term is capped at 7,777 days (21 years), but there are penalties for ending early and ending late.
 
 $$
-\tau=1 + (\dfrac{term}{7665})
+\tau=1 + (\dfrac{term}{7777})
 $$
 
 ##### Size Bonus (_𝛔_):
@@ -220,7 +220,7 @@ $$
 The amplification of a base stake's bonus is based on the amount you stake. The size of a stake is limited by your wallet supply. The larger your stake, the larger your bonus.
 
 $$
-\sigma=1 - (\dfrac{1}{fenix})
+\sigma=1 - (\dfrac{1}{fenix + 1})
 $$
 
 ##### Total Bonus (_β_):

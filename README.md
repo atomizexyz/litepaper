@@ -293,20 +293,15 @@ $$
   - Influential Concepts:
     - Liquidity Pools - [Equity Pool](#equity-pool)
 
-- **Cereneum (Jun 6, 2019)** — Time-based, interest-bearing Cryptographic Certificate of Interest
+- **HEX (Dec 2, 2019)** — Share rate ratcheting, increasing the cost basis for later stakers
 
-  - Links: [Source Code](https://github.com/Cereneum/Cereneum) • [Website](https://web.archive.org/web/20190622004643/https://www.cereneum.com/) • [Contract](https://etherscan.io/token/0xd9D4A7CA154fe137c808F7EEDBe24b639B7AF5a6)
+  - Links: [Source Code](https://github.com/BitcoinHEX/contract) • [Website](https://hex.com) • [Contract](https://etherscan.io/token/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39)
   - Influential Concepts:
     - Staking Longer Pays More - [Time Bonus](#size-bonus-𝛔)
     - EndStakeForAFriend - [Defer](#stake-defer)
     - Robin Hood Bonus - [Adoption Reward](#adoption-reward-pool)
     - Early Unstake Penalty - [End Early](#end-early-𝝴)
     - Late Unstake Penalty - [End Late](#end-late-𝝺)
-
-- **HEX (Dec 2, 2019)** — Share rate ratcheting, increasing the cost basis for later stakers
-
-  - Links: [Source Code](https://github.com/BitcoinHEX/contract) • [Website](https://hex.com) • [Contract](https://etherscan.io/token/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39)
-  - Influential Concepts:
     - Bigger Pays Better - [Size Bonus](#size-bonus-𝛔)
     - T-Shares - [Shares](#shares)
 
